@@ -2,7 +2,7 @@ import unittest
 
 
 class TddSamplePython(unittest.TestCase):
-    def add(self, x, y):
+    def test_calculator_add(self):
         calc = Calculator()
         result = calc.add(2,2)
         assertEqual(result, 4)
