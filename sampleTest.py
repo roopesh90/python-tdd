@@ -1,4 +1,5 @@
 import unittest
+from calculator import Calculator 
 
 class TddSamplePython(unittest.TestCase):
     calc = Calculator()
