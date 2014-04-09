@@ -6,6 +6,9 @@ class TddSamplePython(unittest.TestCase):
         calc = Calculator()
         result = calc.add(2,2)
         self.assertEquals(result, 4)
-    
-if __name__ == '__main__':
-    unittest.main()
+
+suite = unittest.TestLoader().loadTestsFromTestCase(TddSamplePython)
+unittest.TextTestRunner(verbosity=2).run(suite)
+
+#if __name__ == '__main__':
+#    unittest.main()
