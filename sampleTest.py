@@ -7,6 +7,7 @@ class TddSamplePython(unittest.TestCase):
 		result = calc.add(2,2)
 		self.assertEquals(result, 4)
 
+	@unittest.skip("demo test skipping")
 	def test_calculator_subtract(self):
 		calc = Calculator()
 		result = calc.subtract(2,2)
